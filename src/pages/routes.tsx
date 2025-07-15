@@ -3,7 +3,7 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import ContactsPage from "./Contacts";
+import ContactsPage, { contactsLoader } from "./Contacts";
 import NotFound from "./NotFound";
 import { RootLayout } from "./RootLayout";
 import ContactDetail from "./ContactDetail";
@@ -18,7 +18,7 @@ export const appRouter = createBrowserRouter(
       // loa
     >
       <Route path="" element={<HomePage />}></Route>
-      <Route path="/contacts" element={<ContactsPage />}></Route>
+      <Route path="/contacts" element={<ContactsPage />} loader={contactsLoader}></Route>
       <Route path="/contacts/:id" element={<ContactDetail />}></Route>
     </Route>
   )

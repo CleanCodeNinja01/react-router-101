@@ -12,3 +12,9 @@ b. React router gives us a dynamic variable
 
 * with element in router we need to use JSX but we can use component and give name of component
 * anchor tags in HTML / Link tag in React
+
+* no matter how big the response object is we can only define the type which properties we need from that response
+
+1. How we show loader in react router
+2. How to throw error customError from loader
+3. Url Params in contactID
