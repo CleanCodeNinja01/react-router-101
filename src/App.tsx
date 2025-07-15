@@ -1,13 +1,13 @@
+import { RouterProvider } from 'react-router-dom'
 import './App.css'
+import { appRouter } from './pages/routes'
 
 function App() {
 
   return (
-    <div className='flex h-full min-h-screen justify-center items-center'>
-      <h1 className='text-5xl text-center'>
-        React Router App
-      </h1>
-    </div>
+    <RouterProvider
+      router={appRouter}
+    />
   )
 }
 
